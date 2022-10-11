@@ -1,16 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Загрузка файла</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LVMJ</title>
+    <link rel="shortcut icon" href="12.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <style>
+      .Что-бы-как-будто-круглое {
+        width: 50%;
+        max-width: 300px;
+        border-radius: 60%;
+        box-shadow: 0 0 10px rgb(5, 1, 7);
+        padding: 0.1em;
+        margin-bottom: 1em;
+      }
+    </style>
   </head>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   <body>
-    <form enctype="multipart/form-data" method="post">
-      <p>Загрузите ваши фотографии на сервер</p>
-      <p>
-        <input type="file" name="photo" multiple accept="image/*,image/jpeg" />
-        <input type="submit" value="Отправить" />
-      </p>
-    </form>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #100f14ec"
+    >
+      <div class="container">
+        <a class="navbar-brand active" p-0 href="index.html">
+          <img src="сукаблядина.png" alt="Лого" width="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="buy.html">Buy </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sell.html">Sell</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="knopka.html">Кнопка добавления</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class="col-lg-12 col-md-8 col-cm-8 mx-auto">
+          <form enctype="multipart/form-data" method="post">
+            <p>Загрузите ваши фотографии на сервер</p>
+            <p>
+              <input
+                type="file"
+                name="photo"
+                multiple
+                accept="image/*,image/jpeg"
+              />
+              <input type="submit" value="Отправить" />
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
